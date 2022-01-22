@@ -32,7 +32,7 @@ function onFormSubmit(event) {
     }
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-
+    console.log(JSON.parse(localStorage.getItem(STORAGE_KEY)));
     event.target.reset();
     localStorage.removeItem(STORAGE_KEY);    
 }
